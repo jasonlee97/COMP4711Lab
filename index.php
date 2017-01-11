@@ -31,5 +31,7 @@ $second->add_grade(80);
 $second->add_grade(50);
 $students['a456'] = $second;
 
+ksort($students);
+
 foreach($students as $student)
     echo $student->toString();
